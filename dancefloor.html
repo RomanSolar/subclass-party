@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Dance Party</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="src/point.js"></script>
+    <script src="src/dancer.js"></script>
+    <script src="src/angryDancer.js"></script>
+    <script src="src/blinkyDancer.js"></script>
+    <script src="src/butterflyDancer.js"></script>
+    <script src="src/rainbowDancer.js"></script>
+    <script src="src/formations.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <audio controls autoplay attribution="www.bensound.com">
+        <source src="/assets/audio/bensound-dance.mp3">
+      </audio>
+      <span class="title">object dance party</span>
+      <a href="#" class="lineupButton" class="formationButton">Line 'em Up</a>
+      <a href="#" class="disperseButton" class="formationButton">Scatter!</a>
+      <a href="#" class="congaButton" class="formationButton">Conga Line</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="RainbowDancer">Rainbow Dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="ButterflyDancer">Butterfly Dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Blinky Dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="AngryDancer">Angry Dancer</a>
+    </div>
+    <script src="src/init.js"></script>
+  </body>
+</html>

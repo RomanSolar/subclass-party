@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Mocha Spec Runner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/7.2.0/mocha.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/7.2.0/mocha.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/9.2.1/sinon.js"></script>
+  <script>
+    mocha.setup('bdd');
+    window.expect = chai.expect;
+    $(function() {
+      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+    });
+  </script>
+  <script src="spec/angryDancerSpec.js"></script>
+  <script src="spec/blinkyDancerSpec.js"></script>
+  <script src="spec/butterflyDancerSpec.js"></script>
+  <script src="spec/dancerSpec.js"></script>
+  <script src="spec/pointSpec.js"></script>
+  <script src="spec/rainbowDancerSpec.js"></script>
+
+  <script src="src/point.js"></script>
+  <script src="src/dancer.js"></script>
+  <script src="src/angryDancer.js"></script>
+  <script src="src/blinkyDancer.js"></script>
+  <script src="src/butterflyDancer.js"></script>
+  <script src="src/rainbowDancer.js"></script>
+</head>
+<body>
+<div id="mocha"></div>
+</body>
+</html>

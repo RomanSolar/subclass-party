@@ -1,0 +1,79 @@
+body, html{
+  height:100%;
+}
+audio{
+  display: none;
+}
+body{
+  width: 100%;
+  margin: 0px;
+  background-image: url(/assets/img/dancefloor-ai.jpg);
+  background-size: cover;
+  /* background-color: white; */
+  font-size: 18px;
+  font-family: sans-serif;
+}
+body, a:link, a:visited, a:active{
+  color: white;
+}
+a {
+  text-decoration-color: rgba(173, 216, 230, 0.4);
+  background-color: #777;
+  border-radius: 20px;
+  margin: 0 0 10px 10px;
+}
+.topbar span, .topbar a {
+  padding:5px 12px;
+  float:right;
+}
+.lineupButton{
+  float:left;
+}
+.topbar{
+  height:32px;
+  background-color: black;
+}
+.title{
+  background-color: blueviolet;
+}
+.dancer {
+  position:absolute;
+}
+
+.dancerBody {
+  height: 200px;
+}
+
+.wings {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 5px;
+}
+
+.angry {
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+  /* filters */
+  filter: grayscale(100%) sepia(100%) hue-rotate(-45deg) saturate(500%);
+  transform: translate(-50px, -50px);
+}
+
+.angry .dancerBody {
+  height: 250px;
+  margin: -25px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-5px, 0px) rotate(1deg); }
+  30% { transform: translate(5px, 2px) rotate(0deg); }
+  40% { transform: translate(2px, -1px) rotate(1deg); }
+  50% { transform: translate(-2px, 2px) rotate(-1deg); }
+  60% { transform: translate(-5px, 1px) rotate(0deg); }
+  70% { transform: translate(5px, 1px) rotate(-1deg); }
+  80% { transform: translate(-5px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
